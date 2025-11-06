@@ -1,0 +1,106 @@
+/* Hero Banner Header */
+.hero-banner {
+    background-image: url("image/header.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bolder;
+}
+
+/* Main content area with background image */
+main.container {
+    background-image: url("image/main-content-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 0;
+    max-width: 1140px;
+    margin-top: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Justify text in main content */
+main.container p {
+    text-align: justify;
+}
+
+main.container li {
+    text-align: justify;
+}
+
+/* Make text more visible */
+.text-muted {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.lead {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40 !important;
+    max-width: 1140px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #fff;
+    background-image: url("image/background-side.jpg"), url("image/background-side.jpg");
+    background-repeat: repeat-y, repeat-y;
+    background-position: 80px center, calc(100% - 80px) center;
+    background-size: auto;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom table styling - lines only, no background */
+.table-bordered thead th,
+.table-bordered tbody td {
+    background-color: transparent !important;
+}
+
+.table-bordered {
+    background-color: transparent !important;
+}
